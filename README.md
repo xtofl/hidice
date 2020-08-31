@@ -16,3 +16,26 @@ When all players have played, the game decides whether the highest or the lowest
 6.  The host starts the game (no more players can join)
     1.  Now the game decides the order of actions
 7.  Game is over; game token is invalidated.
+
+## Design
+
+### Game Area
+
+* Responsibility:
+  * Manage game creation, user management
+* Backend
+* Frontend
+
+
+### HiDice Game
+
+* Responsibility
+  * Contains and executes game rules
+* Backend
+* Frontend
+
+## Technology
+
+We will create the Game Area and HiDice game in Python with Flask.
+Frontend will be vanilla html + javascript.
+Style... sass? css?
