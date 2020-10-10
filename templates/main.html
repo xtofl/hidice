@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>HiDice</title>
+        <script>
+            function bump(){
+                var post = new XMLHttpRequest();
+                post.open("POST", "/bump");
+                post.onload = function(event){
+                    alert("Got response ! " + post.response);
+                };
+                post.send();
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Hi Dice</h1>
+        <button onclick="bump()">Bump Me</button>
+    </body>
+</html>
